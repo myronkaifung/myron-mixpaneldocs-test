@@ -1,0 +1,4 @@
+dirs:
+  - ./docs
+baseURL: docs-git-${{ github.ref_name }}-mixpanel.vercel.app
+useGitIgnore: true
