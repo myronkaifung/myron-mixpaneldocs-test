@@ -7,12 +7,12 @@
   ],
   "replacementPatterns": [
     {
-      "pattern": "^\\/docs\\/",
-      "replacement": "{{BASEURL}}\\/docs\\/"
+      "pattern": "^\/docs\/",
+      "replacement": "https:\/\/docs\.mixpanel\.com\/docs\/"
     },
     {
-      "pattern": "^\\/guides\\/",
-      "replacement": "{{BASEURL}}\\/guides\\/"
+      "pattern": "^\/guides\/",
+      "replacement": "https:\/\/docs\.mixpanel\.com\/guides\/"
     }
   ],
   "timeout": "20s",
