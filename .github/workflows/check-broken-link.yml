@@ -22,4 +22,4 @@ jobs:
         folder-path: 'pages/docs/tracking-methods/sdks/'
         max-depth: -1
         base-branch: 'main'
-        file-extension: '.mdx'
+        file-extension: '.md'
