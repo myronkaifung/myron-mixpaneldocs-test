@@ -6,7 +6,7 @@
       "reason": "ignore links with dynamic parameters"
     },
     {
-      "pattern": "^.*.(png|jpg|jpeg|webp|gif|mp4)$",
+      "pattern": "^.*.(png|jpg|jpeg|webp|gif|mp4|svg)$",
       "reason": "ignore media since we can't predict all output urls"
     },
     {
