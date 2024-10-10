@@ -6,7 +6,7 @@
       "reason": "ignore links with dynamic parameters"
     },
     {
-      "pattern": "^.*\.(png|jpg|jpeg|webp|gif|mp4)$",
+      "pattern": "^.*.(png|jpg|jpeg|webp|gif|mp4)$",
       "reason": "ignore links with dynamic parameters"
     }
   ],
