@@ -21,7 +21,6 @@ jobs:
         folder-path: 'pages/docs, pages/changelogs, pages/guides'
         # folder-path: 'pages/docs/tracking-methods/sdks/'
         max-depth: -1
-        base-branch: 'main'
         check-modified-files-only: 'yes'
         file-extension: '.md'
     # run for .mdx
@@ -33,6 +32,5 @@ jobs:
         folder-path: 'pages/docs, pages/changelogs, pages/guides'
         # folder-path: 'pages/docs/tracking-methods/sdks/'
         max-depth: -1
-        base-branch: 'main'
         check-modified-files-only: 'yes'
         file-extension: '.mdx'
