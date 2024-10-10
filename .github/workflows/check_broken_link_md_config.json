@@ -12,6 +12,10 @@
     {
       "pattern": "^.*loom.com.*",
       "reason": "ignore links from Loom embeds"
+    },
+    {
+      "pattern": "^.*.mdx$",
+      "reason": "ignore mdx"
     }
   ],
   "replacementPatterns": [
