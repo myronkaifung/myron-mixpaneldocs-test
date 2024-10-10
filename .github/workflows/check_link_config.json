@@ -2,16 +2,16 @@
   "projectBaseUrl":"https://docs.mixpanel.com",
   "ignorePatterns": [
     {
-      "pattern": "^http://example.net"
+      "pattern": ".*{PROJECT_ID}.*"
     }
   ],
   "replacementPatterns": [
     {
-      "pattern": "^/docs/",
+      "pattern": "^\/docs\/",
       "replacement": "{{BASEURL}}/docs/"
     },
     {
-      "pattern": "^/guides/",
+      "pattern": "^\/guides\/",
       "replacement": "{{BASEURL}}/guides/"
     }
   ],
