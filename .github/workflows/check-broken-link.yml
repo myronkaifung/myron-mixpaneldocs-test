@@ -22,6 +22,7 @@ jobs:
         # folder-path: 'pages/docs/tracking-methods/sdks/'
         max-depth: -1
         base-branch: 'main'
+        check-modified-files-only: 'yes'
         file-extension: '.md'
     # run for .mdx
     - uses: gaurav-nelson/github-action-markdown-link-check@v1
@@ -33,4 +34,5 @@ jobs:
         # folder-path: 'pages/docs/tracking-methods/sdks/'
         max-depth: -1
         base-branch: 'main'
+        check-modified-files-only: 'yes'
         file-extension: '.mdx'
