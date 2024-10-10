@@ -20,6 +20,7 @@ jobs:
         config-file: '.github/workflows/check_link_config.json'
         folder-path: 'pages/docs, pages/changelogs, pages/guides'
         # folder-path: 'pages/docs/tracking-methods/sdks/'
+        base-branch: 'main'
         max-depth: -1
         check-modified-files-only: 'yes'
         file-extension: '.md'
@@ -31,6 +32,7 @@ jobs:
         config-file: '.github/workflows/check_link_config.json'
         folder-path: 'pages/docs, pages/changelogs, pages/guides'
         # folder-path: 'pages/docs/tracking-methods/sdks/'
+        base-branch: 'main'
         max-depth: -1
         check-modified-files-only: 'yes'
         file-extension: '.mdx'
