@@ -7,12 +7,12 @@
   ],
   "replacementPatterns": [
     {
-      "pattern": "^\/docs\/",
-      "replacement": "{{BASEURL}}/docs/"
+      "pattern": "^\\/docs\\/",
+      "replacement": "{{BASEURL}}\\/docs\\/"
     },
     {
-      "pattern": "^\/guides\/",
-      "replacement": "{{BASEURL}}/guides/"
+      "pattern": "^\\/guides\\/",
+      "replacement": "{{BASEURL}}\\/guides\\/"
     }
   ],
   "timeout": "20s",
