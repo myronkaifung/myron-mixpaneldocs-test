@@ -8,11 +8,11 @@
   "replacementPatterns": [
     {
       "pattern": "^\/docs\/",
-      "replacement": "https:\/\/docs\.mixpanel\.com\/docs\/"
+      "replacement": "https:\/\/docs.mixpanel.com\/docs\/"
     },
     {
       "pattern": "^\/guides\/",
-      "replacement": "https:\/\/docs\.mixpanel\.com\/guides\/"
+      "replacement": "https:\/\/docs.mixpanel.com\/guides\/"
     }
   ],
   "timeout": "20s",
