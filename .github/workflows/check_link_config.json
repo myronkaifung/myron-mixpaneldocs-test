@@ -7,17 +7,25 @@
     },
     {
       "pattern": "^.*.(png|jpg|jpeg|webp|gif|mp4)$",
-      "reason": "ignore links with dynamic parameters"
+      "reason": "ignore media since we can't predict all output urls"
+    },
+    {
+      "pattern": "^.*loom.com.*",
+      "reason": "ignore links from Loom embeds"
     }
   ],
   "replacementPatterns": [
     {
       "pattern": "^\/docs\/",
-      "replacement": "{{BASEURL}}\/docs\/"
+      "replacement": "https:\/\/docs.mixpanel.com\/docs\/"
     },
     {
       "pattern": "^\/guides\/",
-      "replacement": "{{BASEURL}}\/guides\/"
+      "replacement": "https:\/\/docs.mixpanel.com\/guides\/"
+    },
+    {
+      "pattern": "^\/changelogs\/",
+      "replacement": "https:\/\/docs.mixpanel.com\/changelogs\/"
     }
   ],
   "timeout": "20s",
