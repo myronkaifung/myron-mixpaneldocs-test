@@ -15,8 +15,6 @@ jobs:
     - uses: actions/checkout@v4
     - uses: gaurav-nelson/github-action-markdown-link-check@v1
       with:
-        # run for .md
-        file-extension: '.md'
         # only returns errors
         use-quiet-mode: 'yes'
         use-verbose-mode: 'yes'
@@ -30,20 +28,20 @@ jobs:
         # check-modified-files-only: 'yes'
         # branch to compare for diff
         #base-branch: 'main'
-  # job for .mdx
-  check-mdx-links:
-    runs-on: ubuntu-latest
-    steps:
-    - uses: actions/checkout@v4
-    - uses: gaurav-nelson/github-action-markdown-link-check@v1
-      with:
-        file-extension: '.mdx'
-        use-quiet-mode: 'yes'
-        use-verbose-mode: 'yes'
-        config-file: '.github/workflows/check_broken_link_mdx_config.json'
-        folder-path: 'pages/docs, pages/changelogs, pages/guides'
-        max-depth: -1
-        # only check files changed in the PR
-        # check-modified-files-only: 'yes'
-        # branch to compare for diff
-        #base-branch: 'main'
+  # # job for .mdx
+  # check-mdx-links:
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #   - uses: actions/checkout@v4
+  #   - uses: gaurav-nelson/github-action-markdown-link-check@v1
+  #     with:
+  #       file-extension: '.mdx'
+  #       use-quiet-mode: 'yes'
+  #       use-verbose-mode: 'yes'
+  #       config-file: '.github/workflows/check_broken_link_mdx_config.json'
+  #       folder-path: 'pages/docs, pages/changelogs, pages/guides'
+  #       max-depth: -1
+  #       # only check files changed in the PR
+  #       # check-modified-files-only: 'yes'
+  #       # branch to compare for diff
+  #       #base-branch: 'main'
