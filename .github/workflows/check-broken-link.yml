@@ -20,4 +20,4 @@ jobs:
         folder-path: '.'
         max-depth: -1
         base-branch: 'main'
-        file-extension: '.md, .mdx'
+        file-extension: '.mdx'
