@@ -10,6 +10,10 @@
       "reason": "ignore media since we can't predict all output urls"
     },
     {
+      "pattern": "^.*.mdx$",
+      "reason": "ignore mdx"
+    },
+    {
       "pattern": "^.*loom.com.*",
       "reason": "ignore links from Loom embeds"
     }
