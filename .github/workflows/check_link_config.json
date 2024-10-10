@@ -1,5 +1,5 @@
 {
-  "projectBaseUrl":"https://docs.mixpanel.com",
+  "projectBaseUrl":"https:\/\/docs.mixpanel.com",
   "ignorePatterns": [
     {
       "pattern": ".*{PROJECT_ID}.*",
@@ -13,11 +13,11 @@
   "replacementPatterns": [
     {
       "pattern": "^\/docs\/",
-      "replacement": "https:\/\/docs.mixpanel.com\/docs\/"
+      "replacement": "{{BASEURL}}\/docs\/"
     },
     {
       "pattern": "^\/guides\/",
-      "replacement": "https:\/\/docs.mixpanel.com\/guides\/"
+      "replacement": "{{BASEURL}}\/guides\/"
     }
   ],
   "timeout": "20s",
