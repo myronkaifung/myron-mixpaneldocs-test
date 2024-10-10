@@ -18,7 +18,7 @@ jobs:
         use-quiet-mode: 'yes'
         use-verbose-mode: 'yes'
         config-file: 'check_link_config.json'
-        folder-path: '.'
+        folder-path: '/pages'
         max-depth: -1
         base-branch: 'main'
         file-extension: '.md'
