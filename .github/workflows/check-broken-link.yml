@@ -18,8 +18,19 @@ jobs:
         use-quiet-mode: 'no'
         use-verbose-mode: 'yes'
         config-file: '.github/workflows/check_link_config.json'
-        # folder-path: 'pages/docs, pages/changelogs, pages/guides'
-        folder-path: 'pages/docs/tracking-methods/sdks/'
+        folder-path: 'pages/docs, pages/changelogs, pages/guides'
+        # folder-path: 'pages/docs/tracking-methods/sdks/'
         max-depth: -1
         base-branch: 'main'
         file-extension: '.md'
+    # run for .mdx
+    - uses: gaurav-nelson/github-action-markdown-link-check@v1
+      with:
+        use-quiet-mode: 'no'
+        use-verbose-mode: 'yes'
+        config-file: '.github/workflows/check_link_config.json'
+        folder-path: 'pages/docs, pages/changelogs, pages/guides'
+        # folder-path: 'pages/docs/tracking-methods/sdks/'
+        max-depth: -1
+        base-branch: 'main'
+        file-extension: '.mdx'
