@@ -17,7 +17,7 @@ jobs:
       with:
         use-quiet-mode: 'yes'
         use-verbose-mode: 'yes'
-        config-file: 'check_md_link_config.json'
+        config-file: 'check_link_config.json'
         folder-path: '.'
         max-depth: -1
         base-branch: 'main'
@@ -27,7 +27,7 @@ jobs:
       with:
         use-quiet-mode: 'yes'
         use-verbose-mode: 'yes'
-        config-file: 'check_md_link_config.json'
+        config-file: 'check_link_config.json'
         folder-path: '.'
         max-depth: -1
         base-branch: 'main'
