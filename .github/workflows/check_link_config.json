@@ -2,7 +2,12 @@
   "projectBaseUrl":"https://docs.mixpanel.com",
   "ignorePatterns": [
     {
-      "pattern": ".*{PROJECT_ID}.*"
+      "pattern": ".*{PROJECT_ID}.*",
+      "reason": "ignore links with dynamic parameters"
+    },
+    {
+      "pattern": "^.*\.(png|jpg|jpeg|webp|gif|mp4)$",
+      "reason": "ignore links with dynamic parameters"
     }
   ],
   "replacementPatterns": [
