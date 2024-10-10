@@ -1,38 +1,42 @@
 name: Check Markdown links
 
 on: 
-  # let's see how long it takes to run
+  # triggered on PR
   pull_request: {}
-  # push:
-  #   branches: [ main ]
-  workflow_dispatch: {}
+  
+  # manual trigger
+  # workflow_dispatch: {}
 
 jobs:
   markdown-link-check:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v4
-    # run for .md
     - uses: gaurav-nelson/github-action-markdown-link-check@v1
       with:
-        use-quiet-mode: 'no'
-        use-verbose-mode: 'yes'
-        config-file: '.github/workflows/check_link_config.json'
-        folder-path: 'pages/docs, pages/changelogs, pages/guides'
-        # folder-path: 'pages/docs/tracking-methods/sdks/'
-        base-branch: 'main'
-        max-depth: -1
-        check-modified-files-only: 'yes'
+        # run for .md
         file-extension: '.md'
+        # only returns error
+        use-quiet-mode: 'yes'
+        use-verbose-mode: 'yes'
+        #location for config
+        config-file: '.github/workflows/check_link_config.json'
+        # folders to check parse
+        folder-path: 'pages/docs, pages/changelogs, pages/guides'
+        # depth from folder path
+        max-depth: -1
+        # only check files changed in the PR
+        check-modified-files-only: 'yes'
+        # branch to compare for diff
+        base-branch: 'main'
     # run for .mdx
     - uses: gaurav-nelson/github-action-markdown-link-check@v1
       with:
+        file-extension: '.mdx'
         use-quiet-mode: 'no'
         use-verbose-mode: 'yes'
         config-file: '.github/workflows/check_link_config.json'
         folder-path: 'pages/docs, pages/changelogs, pages/guides'
-        # folder-path: 'pages/docs/tracking-methods/sdks/'
-        base-branch: 'main'
         max-depth: -1
+        base-branch: 'main'
         check-modified-files-only: 'yes'
-        file-extension: '.mdx'
