@@ -12,6 +12,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v4
+    
+    - name: 'Check MD'
     - uses: gaurav-nelson/github-action-markdown-link-check@v1
       with:
         # run for .md
@@ -30,6 +32,8 @@ jobs:
         # branch to compare for diff
         #base-branch: 'main'
     # run for .mdx
+    - name: 'Check MDX'
+      if: '!cancelled()'
     - uses: gaurav-nelson/github-action-markdown-link-check@v1
       with:
         file-extension: '.mdx'
