@@ -64,10 +64,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v4
+
+    # run for .md
     - uses: gaurav-nelson/github-action-markdown-link-check@v1
       name: 'check-md'
       with:
-        # run for .md
         file-extension: '.md'
         # only returns errors
         use-quiet-mode: 'yes'
@@ -82,6 +83,9 @@ jobs:
         check-modified-files-only: 'yes'
         # branch to compare for diff
         base-branch: 'main'
+
+
+    # run for .mdx
     - uses: gaurav-nelson/github-action-markdown-link-check@v1
       name: 'check-mdx'
       if: '!cancelled()'
