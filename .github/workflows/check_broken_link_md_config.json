@@ -1,5 +1,5 @@
 {
-  "projectBaseUrl": "docs-git-${{ github.ref_name }}-mixpanel.vercel.app",
+  "projectBaseUrl": "${{ github.ref_name }}",
   "ignorePatterns": [
     {
       "pattern": ".*{PROJECT_ID}.*",
@@ -45,15 +45,15 @@
   "replacementPatterns": [
     {
       "pattern": "^\/docs\/",
-      "replacement": "https:\/\/{{BASEURL}}\/docs\/"
+      "replacement": "https:\/\/docs-git-{{BASEURL}}-mixpanel.vercel.app\/docs\/"
     },
     {
       "pattern": "^\/guides\/",
-      "replacement": "https:\/\/{{BASEURL}}\/guides\/"
+      "replacement": "https:\/\/docs-git-{{BASEURL}}-mixpanel.vercel.app\/guides\/"
     },
     {
       "pattern": "^\/changelogs\/",
-      "replacement": "https:\/\/{{BASEURL}}\/changelogs\/"
+      "replacement": "https:\/\/docs-git-{{BASEURL}}-mixpanel.vercel.app\/changelogs\/"
     }
   ],
   "timeout": "20s",
