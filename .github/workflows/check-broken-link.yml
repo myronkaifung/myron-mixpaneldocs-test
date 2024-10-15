@@ -24,7 +24,7 @@ jobs:
       with:
         file-extension: '.md'
         # only returns errors
-        use-quiet-mode: 'yes'
+        use-quiet-mode: 'no'
         use-verbose-mode: 'yes'
         #location for config (different config to filter out .mdx
         config-file: '.github/workflows/check_broken_link_md_config.json'
@@ -44,7 +44,7 @@ jobs:
       if: '!cancelled()'
       with:
         file-extension: '.mdx'
-        use-quiet-mode: 'yes'
+        use-quiet-mode: 'no'
         use-verbose-mode: 'yes'
         #location for config (different config to filter out .md
         config-file: '.github/workflows/check_broken_link_mdx_config.json'
