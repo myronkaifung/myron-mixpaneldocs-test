@@ -2,8 +2,11 @@ name: Check Markdown links
 
 on: 
   # triggered on PR
-  pull_request: {}
-  
+  # pull_request: {}
+
+  # trigger after another workflow
+  workflow_run:
+    workflows: [ Tests ]
   # manual trigger
   workflow_dispatch: {}
 
