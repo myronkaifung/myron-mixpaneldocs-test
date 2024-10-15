@@ -7,6 +7,8 @@ on:
   # trigger after another workflow
   workflow_run:
     workflows: [ Tests ]
+    types:
+      - completed
   # manual trigger
   workflow_dispatch: {}
 
